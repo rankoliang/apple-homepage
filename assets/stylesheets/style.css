@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding: .25rem 1rem;
+}
+
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header > nav > ul {
+  padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: white;
+  background: gray;
+  --gray-1: #888888;
+  --gray-2: #707070;
+  --gray-3: #5e5e5e;
+  --gray-4: #777;
+  background: linear-gradient(
+    var(--gray-1),
+    var(--gray-2) 50%,
+    var(--gray-3) 50%,
+    var(--gray-4)
+  );
+  font-size: 12px;
+}
+
+header > nav > ul > li {
+  flex: 1;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #555;
+  font-weight: 600;
+}
+
+header > nav > ul > li:last-child {
+  border-right: none;
+}
+
+header .fa-apple {
+  font-size: 20px;
+}
+
+.search {
+  padding: 0 1em;
+  min-width: 120px;
+}
+
+.search input {
+  background: none;
+  width: calc(100% - 15px);
+  border-radius: 12px;
+  padding: 2px 2px 2px 15px;
+  /* padding-left: 15px; */
+}
+
+.search input:focus {
+  outline: none;
+  background: white;
+}
+
+.search:focus-within .fa-search {
+  color: black;
+}
+
+.search-icon {
+  position: absolute;
+}
+
+.search .fa-search {
+  position: relative;
+  top: 3px;
+  left: 5px;
+  font-size: 10px;
+}
