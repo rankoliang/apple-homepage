@@ -1,24 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;400&family=Open+Sans:wght@300;400;600;700&display=swap");
 
 * {
   font-family: "Open Sans", sans-serif;
 }
 
 .container {
-  padding: .25rem 1rem;
+  padding: 0.25rem 1rem;
 }
 
 header {
   max-width: 1000px;
   margin: 0 auto;
+  margin-top: 100px;
 }
+
 header > nav > ul {
   padding-left: 0px;
   list-style-type: none;
   display: flex;
   justify-content: stretch;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid #555;
   border-radius: 5px;
   color: white;
   background: gray;
@@ -63,7 +65,6 @@ header .fa-apple {
   width: calc(100% - 15px);
   border-radius: 12px;
   padding: 2px 2px 2px 15px;
-  /* padding-left: 15px; */
 }
 
 .search input:focus {
@@ -84,4 +85,46 @@ header .fa-apple {
   top: 3px;
   left: 5px;
   font-size: 10px;
+}
+
+.hero {
+  background-image: url("../images/your_verse_hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+  color: white;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  margin: 1.5rem;
+}
+
+.hero-text > * {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 0.25rem;
+  max-width: 850px;
+  font-weight: 300;
+}
+
+.hero-text p {
+  font-size: 30px;
+}
+
+.hero-text a {
+  margin: 1rem;
+  font-size: 24px;
+}
+
+.hero-text h1 {
+  font-family: "Assistant", sans-serif;
+  font-size: 70px;
+  font-weight: 200;
 }
