@@ -95,7 +95,8 @@ header .fa-apple {
   background-repeat: no-repeat;
   background-position: center bottom;
   max-width: 1440px;
-  height: 600px;
+  min-height: 600px;
+  height: 80vh;
   margin: 0 auto;
   color: white;
 }
